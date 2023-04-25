@@ -22,7 +22,9 @@ Input and output:
 
 We can observe that by running 3 tests, one of them failed when we expected 3 but it returned 0 instead. This is because one of the nnumbers was duplicated instead of reversed 
 which yields a symptom. An empty array `{ }` and an array with only one input also passed `{1}`, however `{3,0,3}` did not.
+
 <img width="762" alt="Screen Shot 2023-04-24 at 11 01 39 PM" src="https://user-images.githubusercontent.com/130017007/234190511-cbee228c-7570-4a87-90aa-08d7e0cef5de.png">
+
 The problem was that the numbers that were being stored were being stored in the wrong array and the wrong array was being returned.
 
 ## Part 3
