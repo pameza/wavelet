@@ -18,6 +18,7 @@ Failure inducing code:
   }
 ```
 Input and output:
+
 <img width="764" alt="Screen Shot 2023-04-24 at 11 01 29 PM" src="https://user-images.githubusercontent.com/130017007/234188393-537ef78d-1635-44e8-8509-4a43d58ba772.png">
 
 We can observe that by running 3 tests, one of them failed when we expected 3 but it returned 0 instead. This is because one of the nnumbers was duplicated instead of reversed 
