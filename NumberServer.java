@@ -12,6 +12,10 @@ class Handler implements URLHandler {
         } else if (url.getPath().equals("/increment")) {
             num += 1;
             return String.format("Number incremented!");
+        } else if(url.getPath().equals("/add-message?s=")){
+            String[] content = url.getQuery().split("=");
+            String x = (content[0] + '\n');
+            return x;
         } else {
             System.out.println("Path: " + url.getPath());
             if (url.getPath().contains("/add")) {
@@ -36,5 +40,5 @@ class NumberServer {
         int port = Integer.parseInt(args[0]);
 
         Server.start(port, new Handler());
-    }
+}
 }
